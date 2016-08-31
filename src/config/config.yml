@@ -1,0 +1,43 @@
+---
+production: &default
+  serverPort: 3333
+  baseUrl: http://www.axionline.com/controlARC
+  views:
+    engine: .hbs
+    extension: .hbs
+    layout: main
+  html:
+    livereload: false
+    minify: true
+    css:
+      stylusPreCompile: true
+      compress: true
+  languages:
+    default: es
+    list: [en, es]
+  security:
+    secret: c0ntr0larc.dev
+  session:
+    cookieDomain: .controlarc.dev
+    maxAge: 259200
+    cookiePrefix: 'mdSession_'
+    path: '/'
+    httpOnly: true
+
+stage: &stage
+  <<: *default
+  baseUrl: stage.controlarc.dev
+
+latest: &latest
+  <<: *stage
+  baseUrl: latest.controlarc.dev
+
+development:
+  <<: *latest
+  baseUrl: http://localhost
+  html:
+    livereload: true
+    minify: false
+    css:
+        stylusPreCompile: false
+        compress: false

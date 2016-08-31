@@ -1,17 +1,59 @@
 {
   "name": "controlARC",
   "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agustin107/controlARC"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp analyze",
+      "pre-push": "gulp test",
+      "post-merge": "npm install",
+      "post-rewrite": "npm install"
+    }
   },
   "dependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-1": "^6.13.0",
+    "babel-register": "^6.14.0",
     "body-parser": "~1.15.1",
     "cookie-parser": "~1.4.3",
+    "date-format": "0.0.2",
     "debug": "~2.2.0",
-    "express": "~4.13.4",
+    "dot-object": "^1.5.0",
+    "express": "~4.14.0",
+    "express-handlebars": "^3.0.0",
+    "html-minifier": "^3.0.2",
     "jade": "~1.11.0",
+    "js-yaml": "^3.6.1",
+    "lodash": "^4.15.0",
+    "mongoose": "^4.5.10",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "oauth": "^0.9.14",
+    "serve-favicon": "~2.3.0",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "chai": "^3.5.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "ghooks": "^1.3.2",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-stylus": "^2.5.0",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.2",
+    "rewire": "^2.5.2",
+    "sinon": "^1.17.5"
   }
 }

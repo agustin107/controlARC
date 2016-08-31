@@ -1,0 +1,14 @@
+{
+  "Site": {
+    "language": "es",
+    "title": "ControlARC",
+    "meta": {
+      "abstract": "Learn to code",
+      "description": "Learn to code",
+      "keywords": "HTML5, Javascript, Node.js"
+    }
+  },
+  "Home": {
+    "welcome": "Bienvenidos a ControlARC"
+  }
+}
