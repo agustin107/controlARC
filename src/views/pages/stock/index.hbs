@@ -4,7 +4,18 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <h3>Productos</h3>
+                <h3 class="box-title">Productos</h3>
+                <div class="box-tools">
+                    <div class="input-group input-group-sm" style="width: 400px;">
+                        <input type="text" name="productToSearch" class="form-control pull-right" placeholder="Buscar..">
+
+                        <div class="input-group-btn">
+                            <button type="submit" id="searchProduct" class="btn btn-default">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="box-body table-responsive no-padding">
                 <table class="table table-hover">

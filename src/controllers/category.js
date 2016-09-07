@@ -13,7 +13,7 @@ const router = express.Router();
 
 router.get('/', passport.authMiddleware(), (req, res, next) => {
   Category.find((err, categories) => {
-    res.render('pages/category/index', {
+    return res.render('pages/category/index', {
       title: 'Categorias',
       section: 'Listado de Categorias',
       categories: categories
@@ -29,7 +29,7 @@ router.get('/new', passport.authMiddleware(), (req, res, next) => {
 });
 
 router.post('/new', passport.authMiddleware(), (req, res, next) => {
-  let newCategory = new Category({
+  const newCategory = new Category({
     name: req.body.name,
     description: req.body.description
   });

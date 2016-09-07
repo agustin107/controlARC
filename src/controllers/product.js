@@ -13,12 +13,27 @@ import Category from '../models/productCategory';
 
 const router = express.Router();
 
+router.get('/', passport.authMiddleware(), (req, res, next) => {
+  const productToSearch = req.param('search');
+  Product.find({ name: new RegExp(productToSearch, 'i')}, (err, products) => {
+    if (products) {
+      res.render('pages/stock/index', {
+        title: 'Producto',
+        section: 'Busqueda de Producto',
+        products: products
+      });
+    } else {
+      res.redirect('/stock');
+    }
+  });
+});
+
 router.get('/new', passport.authMiddleware(), (req, res, next) => {
   Supplier.find((err, suppliers) => {
     if (!err) {
-      Category.find((err, categories) => {
+      return Category.find((err, categories) => {
         if (!err) {
-          res.render('pages/product/new', {
+          return res.render('pages/product/new', {
             title: 'Productos',
             section: 'Nuevo Producto',
             categories: categories,
@@ -31,7 +46,7 @@ router.get('/new', passport.authMiddleware(), (req, res, next) => {
 });
 
 router.post('/new', passport.authMiddleware(), (req, res, next) => {
-  let newProduct = new Product({
+  const newProduct = new Product({
     code: req.body.code,
     category: req.body.category,
     supplier: req.body.supplier,
@@ -47,7 +62,7 @@ router.post('/new', passport.authMiddleware(), (req, res, next) => {
     if (!err) {
       res.redirect('/stock');
     } else {
-      console.log(err);
+      //console.log(err);
     }
   });
 });

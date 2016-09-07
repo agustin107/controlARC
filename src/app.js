@@ -12,6 +12,10 @@ import stylus from 'stylus';
 import passport from 'passport';
 import session from 'express-session';
 import { Strategy } from 'passport-local';
+import ConnectRoles from 'connect-roles';
+
+const MongoStore = require('connect-mongo')(session);
+const roles = new ConnectRoles();
 
 /*
   * Helpers
@@ -19,8 +23,6 @@ import { Strategy } from 'passport-local';
 import $config from './lib/config';
 import hbsHelpers from './lib/handlebars';
 import './middlewares/authentication';
-
-const MongoStore = require('connect-mongo')(session);
 
 /*
   * Router
@@ -54,6 +56,7 @@ if (!$config().html.css.stylusPreCompile) {
 
 // Sending config to templates
 app.use((req, res, next) => {
+  res.locals.page = req.path;
   res.locals.config = $config();
   next();
 });
@@ -90,6 +93,7 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(roles.middleware());
 
 passport.use(new Strategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());

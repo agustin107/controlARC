@@ -2,8 +2,6 @@
   * Npm Dependencies
  */
 import express from 'express';
-import mongoose from 'mongoose';
-import passport from 'passport';
 import Account from '../models/account';
 import User from '../models/user';
 import Commerce from '../models/commerce';
@@ -22,11 +20,11 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
   // Get values from POST request.
-  let email = req.body.email;
-  let password = req.body.password;
-  let fullname = req.body.fullname;
-  let name = fullname.split(' ')[0];
-  let lastname = fullname.split(' ').slice(1).join(" ");
+  const email = req.body.email;
+  const password = req.body.password;
+  const fullname = req.body.fullname;
+  const name = fullname.split(' ')[0];
+  const lastname = fullname.split(' ').slice(1).join(' ');
 
   Account.register(new Account({
     username: email
@@ -38,7 +36,7 @@ router.post('/', (req, res, next) => {
       });
     } else {
       // Create Commerce for user
-      let newCommerce = new Commerce({
+      const newCommerce = new Commerce({
         name: '',
         description: ''
       });
@@ -46,7 +44,7 @@ router.post('/', (req, res, next) => {
       newCommerce.save((err, commerce) => {
         req.commerce = commerce;
 
-        let newUser = new User({
+        const newUser = new User({
           name: name,
           lastname: lastname,
           commerce: commerce._id,

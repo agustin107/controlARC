@@ -38,7 +38,7 @@ export default (app) => {
   });
 
   // Controllers dispatch
-  app.use(`/:language(${availablesLanguages})/dashboard`, dashboardController);
+  //app.use(`/:language(${availablesLanguages})/dashboard`, dashboardController);
   app.use('/', dashboardController);
   app.use('/dashboard', dashboardController);
   app.use('/register', registerController);
@@ -52,16 +52,15 @@ export default (app) => {
 
   // Catch 404 and forward to error handler
   app.use((req, res, next) => {
-    res.status(404).render('404', {
+    res.status(404).render('pages/404', {
       url: req.originalUrl,
       error: 'Not found'
-    })
+    });
   });
 
   // Development error handler
   if (app.get('env') === 'development') {
     app.use((err, req, res, next) => {
-      console.log(err);
       res.status(err.status || 500);
       res.render('pages/error', {
         message: err.message,
