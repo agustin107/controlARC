@@ -29,9 +29,9 @@ router.get('/', passport.authMiddleware(), (req, res, next) => {
 });
 
 router.get('/new', passport.authMiddleware(), (req, res, next) => {
-  Supplier.find((err, suppliers) => {
+  Supplier.find().exec((err, suppliers) => {
     if (!err) {
-      return Category.find((err, categories) => {
+      return Category.find().exec((err, categories) => {
         if (!err) {
           return res.render('pages/product/new', {
             title: 'Productos',

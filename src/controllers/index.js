@@ -38,7 +38,7 @@ export default (app) => {
   });
 
   // Controllers dispatch
-  //app.use(`/:language(${availablesLanguages})/dashboard`, dashboardController);
+  app.use(`/:language(${availablesLanguages})/dashboard`, dashboardController);
   app.use('/', dashboardController);
   app.use('/dashboard', dashboardController);
   app.use('/register', registerController);

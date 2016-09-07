@@ -1,5 +1,4 @@
 (() => {
-  console.log("ho");
   $('#searchProduct').click((ev) => {
     const productToSearch = $('input[name="productToSearch"]').val();
     if (productToSearch) {
