@@ -37,6 +37,8 @@ router.post('/new', passport.authMiddleware(), (req, res, next) => {
   newCategory.save((err, category) => {
     if (!err) {
       res.redirect('/category');
+    } else {
+      res.redirect('/category/new');
     }
   });
 });

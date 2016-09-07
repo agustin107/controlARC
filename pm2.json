@@ -1,8 +1,8 @@
 {
 	"apps": [{
 		"name": "ControlARC",
-		"script": "./src/app.js",
-		"port": "3333",
+		"script": "./src/server.js",
+		"port": "5555",
 		"watch": "./src",
 		"ignore_watch": [
 			"./src/stylus",
@@ -15,6 +15,7 @@
 		"out_files": "./logs/app-out.log",
 		"env": {
 			"NODE_ENV": "development"
-		}
+		},
+    "node_args" : "--harmony"
 	}]
 }

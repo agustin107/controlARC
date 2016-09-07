@@ -1,7 +1,7 @@
 ---
 production: &default
-  serverPort: 3333
-  baseUrl: http://www.axionline.com/controlARC
+  serverPort: 5555
+  baseUrl: http://controlarc.axionline.com
   views:
     engine: .hbs
     extension: .hbs
@@ -33,8 +33,9 @@ latest: &latest
   baseUrl: latest.controlarc.dev
 
 development:
-  <<: *latest
+  <<: *default
   baseUrl: http://localhost
+  serverPort: 3333
   html:
     livereload: true
     minify: false
