@@ -25,12 +25,12 @@ function load(language) {
 
   if (_.includes($config().languages.list, language)) {
     try {
-      content = require(`../content/i18n/${language}`);
+      content = require(`../locales/i18n/${language}`);
     } catch (e) {
-      content = require(`../content/i18n/${config().languages.default}`);
+      content = require(`../locales/i18n/${$config().languages.default}`);
     }
   } else {
-    content = require(`../content/i18n/${$config().languages.default}`);
+    content = require(`../locales/i18n/${$config().languages.default}`);
   }
 
   return content;

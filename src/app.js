@@ -9,17 +9,33 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import exphbs from 'express-handlebars';
 import stylus from 'stylus';
+import passport from 'passport';
+import session from 'express-session';
+import { Strategy } from 'passport-local';
 
 /*
   * Helpers
  */
 import $config from './lib/config';
 import hbsHelpers from './lib/handlebars';
+import './middlewares/authentication';
+
+const MongoStore = require('connect-mongo')(session);
 
 /*
   * Router
  */
-import router from './router';
+import router from './controllers/index';
+
+/*
+  * DB
+ */
+import db from './models/index';
+
+/*
+  * Models
+ */
+import Account from './models/account';
 
 const app = express();
 
@@ -62,9 +78,28 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret: 'secret',
+  saveUnintialized: true,
+  resave: true,
+  store: new MongoStore({
+    url: 'mongodb://localhost/controlarc',
+    collections: 'sessions'
+  })
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.use(new Strategy(Account.authenticate()));
+passport.serializeUser(Account.serializeUser());
+passport.deserializeUser(Account.deserializeUser());
 
 // Router
 router(app);
+
+// Connect database
+db();
 
 // Disabling x-powered-by
 app.disable('x-powered-by');

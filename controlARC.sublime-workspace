@@ -1,0 +1,1584 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"productCategorySchema"
+			],
+			[
+				"pass",
+				"passportLocalMongoose"
+			],
+			[
+				"regi",
+				"registerController"
+			],
+			[
+				"home",
+				"homeController"
+			],
+			[
+				"get",
+				"getCurrentLanguage"
+			],
+			[
+				"html",
+				"htmlMinify"
+			],
+			[
+				"exp",
+				"exphbs"
+			],
+			[
+				"JS",
+				"JsonHttpGateway	alias"
+			],
+			[
+				"templa",
+				"templateUrl	property"
+			],
+			[
+				"Loca",
+				"LocalStorage	alias"
+			],
+			[
+				"Auth",
+				"AuthService	alias"
+			],
+			[
+				"Aut",
+				"AuthHttp	alias"
+			],
+			[
+				"Exce",
+				"Exception"
+			],
+			[
+				"ite",
+				"itemUpdated"
+			],
+			[
+				"succ",
+				"successResponse"
+			],
+			[
+				"broad",
+				"broadcastOn"
+			],
+			[
+				"select",
+				"selectedFirst"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"item",
+				"itemId"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"me",
+				"medium-and-down"
+			],
+			[
+				"des",
+				"descriptionBox"
+			],
+			[
+				"he",
+				"heightNextUpBox"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/models/index.js",
+			"settings":
+			{
+				"buffer_size": 141,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/controllers/dashboard/dashboard.controller.js",
+			"settings":
+			{
+				"buffer_size": 314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/pages/register/index.hbs",
+			"settings":
+			{
+				"buffer_size": 2105,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/controllers/register/register.controller.js",
+			"settings":
+			{
+				"buffer_size": 1352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/controllers/login/login.controller.js",
+			"settings":
+			{
+				"buffer_size": 734,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/suppliers.js",
+			"settings":
+			{
+				"buffer_size": 223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/productCategories.js",
+			"settings":
+			{
+				"buffer_size": 244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/pages/login/index.hbs",
+			"settings":
+			{
+				"buffer_size": 1715,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/accounts.js",
+			"settings":
+			{
+				"buffer_size": 285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/layouts/main.hbs",
+			"settings":
+			{
+				"buffer_size": 1255,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/pages/index.hbs",
+			"settings":
+			{
+				"buffer_size": 51,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/controllers/index.js",
+			"settings":
+			{
+				"buffer_size": 2070,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/layouts/page-blank.hbs",
+			"settings":
+			{
+				"buffer_size": 1560,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/pages/lockscreen/index.hbs",
+			"settings":
+			{
+				"buffer_size": 1341,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/controllers/lockscreen/lockscreen.controller.js",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/middlewares/authentication.js",
+			"settings":
+			{
+				"buffer_size": 352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/locales/i18n/es.json",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app.js",
+			"settings":
+			{
+				"buffer_size": 2164,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/lib/i18n.js",
+			"settings":
+			{
+				"buffer_size": 925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 100 files for \"config\"\n\n/home/anrr/Code/Github/controlARC/src/app.js:\n   15    * Helpers\n   16   */\n   17: import $config from './lib/config';\n   18  import hbsHelpers from './lib/handlebars';\n   19  \n   ..\n   30  const app = express();\n   31  \n   32: if (!$config().html.css.stylusPreCompile) {\n   33:   // Set and configurate stylus middleware\n   34    app.use(\n   35      stylus.middleware({\n   ..\n   43  }\n   44  \n   45: // Sending config to templates\n   46  app.use((req, res, next) => {\n   47:   res.locals.config = $config();\n   48    next();\n   49  });\n   50  \n   51  // Handlebars setup\n   52: app.engine($config().views.engine, exphbs({\n   53:   extname: $config().views.extension,\n   54:   defaultLayout: $config().views.layout,\n   55    layoutsDir: path.join(__dirname, '/views/layouts'),\n   56    partialsDir: path.join(__dirname, '/views/partials'),\n   ..\n   60  // view engine setup\n   61  app.set('views', path.join(__dirname, 'views'));\n   62: app.set('view engine', $config().views.engine);\n   63  \n   64  // uncomment after placing your favicon in /public\n   ..\n   90  \n   91  // Listening port..\n   92: app.listen($config().serverPort || 3000);\n   93  \n   94  export default app;\n\n/home/anrr/Code/Github/controlARC/src/controllers/index.js:\n    1: import $config from '../lib/config';\n    2  import i18n from '../lib/i18n';\n    3  import {isMobile} from '../lib/utils/device';\n    .\n    8  \n    9  export default (app) => {\n   10:   const availablesLanguages = $config().languages.list.join('|');\n   11    // en|es|fr\n   12  \n   13    app.use((req, res, next) => {\n   14      res.__ = res.locals.__ = i18n.load(i18n.getCurrentLanguage(req.url));\n   15:     res.locals.config.basePath = `${$config().baseUrl}${i18n.getLanguagePath(req.url)}`;\n   16:     res.locals.basePath = res.locals.config.basePath;\n   17      res.locals.currentLanguage = i18n.getCurrentLanguage(req.url);\n   18      res.locals.isMobile = isMobile(req.headers['user-agent']);\n\n/home/anrr/Code/Github/controlARC/src/lib/config.js:\n    3  import env from './env';\n    4  \n    5: const config = yaml.safeLoad(\n    6:   fs.readFileSync(`${__dirname}/../config/config.yml`, 'utf-8')\n    7  );\n    8  \n    9  /**\n   10:  * Returns the selected environment configuration\n   11   * @return {object} environment\n   12   */\n   13: export default function getConfig() {\n   14:   return config[env().name] || {};\n   15  }\n\n/home/anrr/Code/Github/controlARC/src/lib/handlebars.js:\n    1: import $config from './config';\n    2  import { minify } from 'html-minifier';\n    3  \n    4  function compress(content) {\n    5:   if (!$config().html.minify) {\n    6      return content.fn(this);\n    7    }\n\n/home/anrr/Code/Github/controlARC/src/lib/i18n.js:\n    1: import $config from './config';\n    2  import _ from 'lodash';\n    3  import { getParamsFromUrl } from './utils/url';\n    .\n   12    const params = getParamsFromUrl(url);\n   13  \n   14:   return _.includes($config().languages.list, params[0]) ? params[0] : $config().languages.default;\n   15  }\n   16  \n   ..\n   18    const params = getParamsFromUrl(url);\n   19  \n   20:   return _.includes($config().languages.list, params[0]) ? `/${params[0]}` : '';\n   21  }\n   22  \n   ..\n   24    let content;\n   25  \n   26:   if (_.includes($config().languages.list, language)) {\n   27      try {\n   28        content = require(`../content/i18n/${language}`);\n   29      } catch (e) {\n   30:       content = require(`../content/i18n/${config().languages.default}`);\n   31      }\n   32    } else {\n   33:     content = require(`../content/i18n/${$config().languages.default}`);\n   34    }\n   35  \n\n/home/anrr/Code/Github/controlARC/src/lib/security.js:\n    1: import $config from './config';\n    2  import crypto from 'crypto';\n    3  \n    4: const salt = $config().security.secret;\n    5  \n    6  export function md5(str) {\n\n/home/anrr/Code/Github/controlARC/src/lib/session.js:\n    3  import { parseJson, stringify } from './utils/object';\n    4  \n    5: // Configuration\n    6: import { $session } from './config';\n    7  \n    8  export default (req, res, next) => {\n\n/home/anrr/Code/Github/controlARC/src/lib/utils/files.js:\n    5  import { isDefined } from './is';\n    6  \n    7: // Configuration\n    8: import { $baseUrl } from './../config';\n    9  \n   10  /**\n\n/home/anrr/Code/Github/controlARC/src/lib/utils/security.js:\n    5  import { isDefined } from './is';\n    6  \n    7: // Configuration\n    8: import { $security } from './../config';\n    9  \n   10  // Secret Salt\n\n/home/anrr/Code/Github/controlARC/src/views/layouts/main.hbs:\n    4      <head>\n    5          {{> site/metas }}\n    6:         <title>{{ config.site.title }} | {{ title }}</title>\n    7           <!-- Bootstrap 3.3.6 -->\n    8          <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n\n/home/anrr/Code/Github/controlARC/src/views/partials/development/livereload.hbs:\n    1: {{#if config.html.livereload }}\n    2      <script>\n    3          document.write('<script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1\"</' + 'script>')\n\n46 matches across 11 files\n",
+			"settings":
+			{
+				"buffer_size": 5171,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/models/users.js",
+			"settings":
+			{
+				"buffer_size": 212,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/models/products.js",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"han",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ssyt",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/anrr/Code/Github/controlARC",
+		"/home/anrr/Code/Github/controlARC/src",
+		"/home/anrr/Code/Github/controlARC/src/controllers",
+		"/home/anrr/Code/Github/controlARC/src/controllers/dashboard",
+		"/home/anrr/Code/Github/controlARC/src/controllers/lockscreen",
+		"/home/anrr/Code/Github/controlARC/src/controllers/login",
+		"/home/anrr/Code/Github/controlARC/src/controllers/register",
+		"/home/anrr/Code/Github/controlARC/src/middlewares",
+		"/home/anrr/Code/Github/controlARC/src/models",
+		"/home/anrr/Code/Github/controlARC/src/views",
+		"/home/anrr/Code/Github/controlARC/src/views/pages",
+		"/home/anrr/Code/Github/controlARC/src/views/pages/login"
+	],
+	"file_history":
+	[
+		"/home/anrr/Code/Github/controlARC/src/middlewares/authentication.js",
+		"/home/anrr/Code/Github/controlARC/src/controllers/home/home.controller.js",
+		"/home/anrr/Code/Github/controlARC/src/views/layouts/page-blank.hbs",
+		"/home/anrr/Code/Github/controlARC/src/config/config.yml",
+		"/home/anrr/Code/Github/controlARC/src/lib/config.js",
+		"/home/anrr/Code/Github/controlARC/src/models/db.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/url.js",
+		"/home/anrr/Code/Github/controlARC/gulpfile.babel.js",
+		"/home/anrr/Code/Github/controlARC/test/globalTest.js",
+		"/home/anrr/Code/Github/controlARC/test/lib/envTest.js",
+		"/home/anrr/Code/Github/controlARC/test/lib/utilsTest.js",
+		"/home/anrr/Code/Github/controlARC/src/app.js",
+		"/home/anrr/Code/Github/controlARC/src/server.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/env.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/handlebars.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/i18n.js",
+		"/home/anrr/Code/Github/controlARC/src/views/partials/site/header.hbs",
+		"/home/anrr/Code/Github/controlARC/src/views/partials/site/sidebar.hbs",
+		"/home/anrr/Code/Github/controlARC/src/views/layouts/main.hbs",
+		"/home/anrr/Code/Github/controlARC/src/views/partials/site/content.hbs",
+		"/home/anrr/Code/Github/controlARC/src/views/partials/site/footer.hbs",
+		"/home/anrr/Code/Github/controlARC/src/stylus/style.styl",
+		"/home/anrr/Code/Github/controlARC/src/lib/session.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/date.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/device.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/files.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/is.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/object.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/security.js",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils/string.js",
+		"/home/anrr/Code/Github/controlARC/src/router.js",
+		"/home/anrr/Code/Github/controlARC/package.json",
+		"/home/anrr/Code/Github/controlARC/src/content/i18n/.gitkeep",
+		"/home/anrr/Code/Github/controlARC/src/public/css/AdminLTE.min.css",
+		"/home/anrr/Code/Github/controlARC/src/lib/security.js",
+		"/home/anrr/Code/Github/controlARC/src/app/dashboard/dashboard.controller.js",
+		"/home/anrr/Code/Github/controlARC/src/app/home/home.controller.js",
+		"/home/anrr/Code/Github/controlARC/src/content/i18n/es.json",
+		"/home/anrr/Code/Github/controlARC/.eslintrc",
+		"/home/anrr/Code/Github/controlARC/src/app/users.js",
+		"/home/anrr/Code/Github/controlARC/pm2.json",
+		"/home/anrr/Code/Github/controlARC/src/lib/utils.js",
+		"/home/anrr/Code/Github/controlARC/.babelrc",
+		"/home/anrr/Code/Github/controlARC/src/views/partials/site/metas.hbs",
+		"/home/anrr/Code/Github/controlARC/src/views/index.hbs",
+		"/home/anrr/Code/Github/controlARC/gulp/eslint.js",
+		"/home/anrr/Code/Github/controlARC/src/content/i18n/en.json",
+		"/home/anrr/Code/Github/controlARC/src/views/partials/development/livereload.hbs",
+		"/home/anrr/Code/Github/controlARC/src/views/partials/error.hbs",
+		"/home/anrr/Code/Github/controlARC/src/routes/index.js",
+		"/home/anrr/Code/Github/controlARC/src/routes/users.js",
+		"/home/anrr/Code/Github/controlARC/.editorconfig",
+		"/home/anrr/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/anrr/Code/Github/amuleto/app/services/json-http-service.ts",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/resources/views/layouts/partials/_header-connect.blade.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/resources/views/layouts/partials/_navigation.blade.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/resources/views/layouts/partials/_footer.blade.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/template/jonaki-job-board-template/index.html",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/resources/views/pages/contacto.blade.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Http/Controllers/ContactoController.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/resources/views/pages/index.blade.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Http/Controllers/IndexController.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Http/Controllers/Auth/AuthController.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/config/app.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/resources/views/pages/nosotros.blade.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Models/Demanda.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Http/Controllers/NosotrosController.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/seeds/EstadosDemandaTableSeeder.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_18_163029_create_unidad_academica_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_18_044005_create_estados_demanda_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_18_163345_create_demandas_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_11_221212_create_convocatorias_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_18_163159_create_ofertas_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_18_155437_create_noticias_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Models/Noticia.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Models/Convocatoria.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Models/UnidadAcademica.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Models/Oferta.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Models/User.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/public/.htaccess",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Http/routes.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/package.json",
+		"/home/anrr/Code/Gitlab/pvt-unne/.gitignore",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_18_044136_create_demandas_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_11_214647_create_ofertas_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_17_230120_create_unidad_academica_table.php",
+		"/home/anrr/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/seeds/DatabaseSeeder.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Models/EstadoDemanda.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_11_221055_create_demandas_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/migrations/2016_08_11_223337_create_estados_demanda_table.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/database/seeds/DemandasTableSeeder.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/.env",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/resources/views/layouts/master.blade.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/app/Providers/AppServiceProvider.php",
+		"/home/anrr/Code/Gitlab/pvt-unne/web/composer.json",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Models/User.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Http/routes.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Http/Requests/Items/ItemRequest.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/config/broadcasting.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/.env.example",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Events/Items/ItemDestroyed.php",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/controllers/header.controller.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/auth/auth.module.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/services/pusher-notification.service.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/item/item.module.js",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Events/Items/ItemUpdated.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Http/Controllers/ItemsController.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/.env",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Exceptions/ItemWithDetailsException.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/database/migrations/2016_07_21_121413_create_notifications_table.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/database/seeds/ItemTableSeeder.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Models/Item.php",
+		"/home/anrr/Code/Bitbucket/credentials-api/app/Exceptions/Exception.php",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/group/controllers/group.controller.js",
+		"/home/anrr/Code/Bitbucket/credentials-api/composer.json",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/detail/controllers/detail.controller.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/account/controllers/account.controller.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/client/controllers/client.controller.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/config/env.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/header/views/header.html",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/header/directives/header-search.directive.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/header/controllers/header.controller.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/header/header.module.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/views/layout.html",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/routes.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/detail/detail.module.js",
+		"/home/anrr/Code/Bitbucket/credentials-app/app/scripts/components/account/account.module.js"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/home/anrr/Code/Github/controlARC/src",
+			"/home/anrr/Code/Bitbucket/credentials-api/app/Http",
+			"/home/anrr/Code/Bitbucket/credentials-api/app",
+			"/home/anrr/Code/Bitbucket/credentials-api"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"config",
+			"app",
+			"register",
+			"utils",
+			"h1",
+			"= require(",
+			"= require('",
+			"var",
+			"cmsnode.cms",
+			"name",
+			"estados",
+			"estados_demanda_id",
+			"estados_demanda",
+			"estados",
+			"estadosDemanda",
+			"pusher",
+			"client",
+			"account",
+			"selectedFirst",
+			"itemFirst",
+			"App\\Events\\Teams\\EventNewInvitation",
+			"selected",
+			"ID: ",
+			"Log::",
+			"entinel::check()",
+			"entinel::check()->hasAccessToItem(",
+			"Sentinel::check",
+			"AddUserIdToItemsTable",
+			"Adviso",
+			"<!"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"from ",
+			"from",
+			"import"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/models/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/controllers/dashboard/dashboard.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/views/pages/register/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/controllers/register/register.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1225,
+								1225
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/controllers/login/login.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								574,
+								574
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/models/suppliers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/models/productCategories.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/views/pages/login/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1195,
+								1195
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 330.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/models/accounts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								225,
+								225
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/views/layouts/main.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/views/pages/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/controllers/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1510,
+								1510
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 858.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/views/layouts/page-blank.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1519,
+								1519
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/views/pages/lockscreen/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								317,
+								317
+							],
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/controllers/lockscreen/lockscreen.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/middlewares/authentication.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								331,
+								331
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/locales/i18n/es.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								291,
+								291
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								468,
+								468
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "src/lib/i18n.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							],
+							[
+								860,
+								860
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5171,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										125,
+										131
+									],
+									[
+										144,
+										150
+									],
+									[
+										268,
+										274
+									],
+									[
+										326,
+										332
+									],
+									[
+										446,
+										452
+									],
+									[
+										523,
+										529
+									],
+									[
+										533,
+										539
+									],
+									[
+										625,
+										631
+									],
+									[
+										676,
+										682
+									],
+									[
+										727,
+										733
+									],
+									[
+										995,
+										1001
+									],
+									[
+										1145,
+										1151
+									],
+									[
+										1286,
+										1292
+									],
+									[
+										1306,
+										1312
+									],
+									[
+										1492,
+										1498
+									],
+									[
+										1698,
+										1704
+									],
+									[
+										1720,
+										1726
+									],
+									[
+										1816,
+										1822
+									],
+									[
+										2084,
+										2090
+									],
+									[
+										2150,
+										2156
+									],
+									[
+										2157,
+										2163
+									],
+									[
+										2251,
+										2257
+									],
+									[
+										2349,
+										2355
+									],
+									[
+										2376,
+										2382
+									],
+									[
+										2484,
+										2490
+									],
+									[
+										2499,
+										2505
+									],
+									[
+										2614,
+										2620
+									],
+									[
+										2752,
+										2758
+									],
+									[
+										2767,
+										2773
+									],
+									[
+										2951,
+										2957
+									],
+									[
+										3002,
+										3008
+									],
+									[
+										3136,
+										3142
+									],
+									[
+										3274,
+										3280
+									],
+									[
+										3467,
+										3473
+									],
+									[
+										3578,
+										3584
+									],
+									[
+										3699,
+										3705
+									],
+									[
+										3714,
+										3720
+									],
+									[
+										3788,
+										3794
+									],
+									[
+										3991,
+										3997
+									],
+									[
+										4040,
+										4046
+									],
+									[
+										4219,
+										4225
+									],
+									[
+										4271,
+										4277
+									],
+									[
+										4420,
+										4426
+									],
+									[
+										4473,
+										4479
+									],
+									[
+										4651,
+										4657
+									],
+									[
+										4946,
+										4952
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/home/anrr/Code/Github/controlARC",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1320.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "src/models/users.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "src/models/products.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 162.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "controlARC.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Code/Github/ppfa_html/ppfa.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 408.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"apps": [{
+		"name": "ControlARC",
+		"script": "./src/app.js",
+		"port": "3333",
+		"watch": "./src",
+		"ignore_watch": [
+			"./src/stylus",
+			"./src/public"
+		],
+		"watch_options": {
+			"usePolling": true
+		},
+		"error_files": "./logs/app-error.log",
+		"out_files": "./logs/app-out.log",
+		"env": {
+			"NODE_ENV": "development"
+		}
+	}]
+}
